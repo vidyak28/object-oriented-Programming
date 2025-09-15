@@ -25,12 +25,13 @@ class Student{
             cout<<"Name: "<< name<< " Age: "<< age<< " Marks: "<< marks<< endl;
         }
     
-        };
+    };
 
 
 int main(){
     Student s1;
     s1.display();
+   
     Student s2("Vidya", 19, 90.5);
     s2.display();
     return 0;
