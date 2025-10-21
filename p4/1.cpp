@@ -5,11 +5,11 @@ class Rectangle{
     private:
         float length,breadth;
     public:
-        Rectangle(float l, float b){
+        Rectangle(float l, float b){//parameterised constructor
             length=l;
             breadth=b;
         }
-        float calculate_area(){
+        float calculate_area(){//member function
             return length*breadth;
         }
     

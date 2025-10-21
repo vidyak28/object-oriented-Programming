@@ -8,7 +8,7 @@ class  Book {
 
     public:
      
-     void setTitle(string  Newtitle){//you are using method to update balance making sure it shld be positive
+     void setTitle(string  Newtitle){// assigning  private datamember with the help of temp variable
         title=Newtitle;
      }
      void setPrice(float Newprice){

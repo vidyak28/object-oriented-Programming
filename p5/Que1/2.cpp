@@ -9,7 +9,7 @@ class first{
         first(int a){
             numA=a;
         }
-        friend void add(first, second);
+        friend void findLarge(first, second);
 };
 class second{
     private:
@@ -18,16 +18,21 @@ class second{
         second(int b){
             numB=b;
         }
-        friend void add(first, second);
+        friend void findLarge(first, second);
 };
 // Friend function definition outside the class
-void add(first a, second b) {// this function now can access both datamembers in two classes and uses it becoz we declared friend in both classes
-    cout << "Sum = " << (a.numA + b.numB) << endl;
+void findLarge(first a, second b) {// this function now can access both datamembers in two classes and uses it becoz we declared friend in both classes
+    if(a.numA>b.numB)
+        cout<<" first class has larger value"<< a.numA<< endl;
+    else if(a.numA< b.numB)
+        cout<<"Second class has larger value."<<b.numB<< endl;
+    else 
+        cout<< "Both values are equal. "<< a.numA<< endl;
 }
 int main() {
     first  obj1(5);
     second  obj2(10);
 
-    add(obj1, obj2); // friend function call
+    findLarge(obj1, obj2); // friend function call
     return 0;
 }

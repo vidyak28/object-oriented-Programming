@@ -11,7 +11,7 @@ class  Student {
         return name;
      }
      void set_name(string Newname){
-        name=Newname;//function to update the private member by assigning it to temporary variable
+        name=Newname;//function to update the private member by assigning it to temporary variable coz u  cant directly access or update private data members
      }
      void set_age(int n){
         age=n;

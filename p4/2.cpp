@@ -7,10 +7,11 @@ class Student{
         int age;
         float marks;
     public:
-        Student(){
+        Student(){//default constructor
             name="Vidya";
             age=18;
             marks=90;
+            // if u dont assign some values above the constructor by default will take values
             cout<< "Default constructor called!"<< endl;
           
         }
